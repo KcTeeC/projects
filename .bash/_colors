@@ -1,0 +1,38 @@
+# $HOME/dotfiles/bash/_colors
+# general
+bold=$(tput bold)
+reset=$(tput reset)
+underline=$(tput sgr 0 1)
+fg_reset=$(tput setaf 9)
+bg_reset=$(tput setab 9)
+
+# foreground
+red=$(tput setaf 1)
+green=$(tput setaf 2)
+yellow=$(tput setaf 3)
+blue=$(tput setaf 4)
+magenta=$(tput setaf 5)
+cyan=$(tput setaf 6)
+white=$(tput setaf 7)
+ 
+# bold
+bred=${bold}${red}
+bgreen=${bold}${green}
+byellow=${bold}${yellow}
+bblue=${bold}${blue}
+bmagenta=${bold}${magenta}
+bcyan=${bold}${cyan}
+bwhite=${bold}${white}
+
+# background 
+background_red=$(tput setab 1)
+background_green=$(tput setab 2)
+background_yellow=$(tput setab 3)
+background_blue=$(tput setab 4)
+background_magenta=$(tput setab 5)
+background_cyan=$(tput setab 6)
+background_white=$(tput setab 7)
+
+# LS
+LS_COLORS=di=${bmagenta}:${background_white}:fi=${underline}:${magenta}:${background_white}:ln=${underline}:${yellow}:so=${white}:bd=${bblue}:${background_yellow}:cd=${white}:or=${white}:mi=${underline}:${white}:ex=${underine}:${cyan}:*.rpm=${white}:${background_magenta}'
+

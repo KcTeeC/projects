@@ -1,0 +1,9 @@
+# $HOME/dotfiles/.bash/prompt
+
+# Prompt {{{
+if [[ $EUID -eq 1 ]]; then
+	export PS1="${bgreen}\t${reset} : ${white}\W${reset} : ${bred}${underline}\u@\h${reset} \n$ "
+else
+	export PS1="${bgreen}\t${reset} : ${white}\W${reset} : ${bred}\u@\h${reset} \n$ "
+fi
+#}}}
